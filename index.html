@@ -11,23 +11,44 @@ h1{font-size:1.6rem;color:#fff;margin-bottom:5px}
 .card{background:#12121a;border:1px solid #222;border-radius:12px;padding:20px;margin-bottom:15px}
 .card h2{color:#00d4ff;font-size:1.1rem;margin-bottom:10px}
 .date-nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
-.date-nav a{background:#1a1a3a;color:#7b9fff;padding:6px 14px;border-radius:8px;text-decoration:none;font-size:0.85rem;border:1px solid #2a2a4a}
-.date-nav a:hover{background:#2a2a4a}
+.date-nav a{background:#1a1a3a;color:#7b9fff;padding:6px 14px;border-radius:8px;text-decoration:none;font-size:0.85rem;border:1px solid #2a2a4a;transition:all 0.2s}
+.date-nav a:hover{background:#2a2a4a;color:#00d4ff}
 .date-nav .active{background:#00d4ff;color:#000;font-weight:bold}
 a{color:#7b9fff;text-decoration:none}
 .btn{display:inline-block;background:#1a1a3a;color:#00d4ff;padding:10px 24px;border-radius:8px;text-decoration:none;margin-top:15px;border:1px solid #00d4ff}
 .btn:hover{background:#00d4ff;color:#000}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin:15px 0}
+.stat{background:#1a1a3a;padding:12px 20px;border-radius:10px;border:1px solid #2a2a4a;text-align:center;flex:1;min-width:100px}
+.stat-num{font-size:1.5rem;color:#00d4ff;font-weight:bold}
+.stat-label{font-size:0.75rem;color:#7b7b8b}
 .footer{text-align:center;color:#606070;font-size:0.8rem;margin-top:40px;padding-top:20px;border-top:1px solid #1a1a2a}
 </style></head><body>
 <h1>📰 Plus Ultra Tracker</h1>
 <p class="sub">Seguimiento diario del caso Plus Ultra · <strong>MB360</strong></p>
-<div class="date-nav">
-<a href="reporte_plusultra_2026-07-23.html" class="active">📄 2026-07-23</a>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">🇪🇸</div><div class="stat-label">Nacional</div></div>
+  <div class="stat"><div class="stat-num">🇻🇪</div><div class="stat-label">Venezuela</div></div>
+  <div class="stat"><div class="stat-num">🇨🇴</div><div class="stat-label">Colombia</div></div>
+  <div class="stat"><div class="stat-num">🇵🇪</div><div class="stat-label">Perú</div></div>
+  <div class="stat"><div class="stat-num">🇦🇷</div><div class="stat-label">Argentina</div></div>
 </div>
+
+<h2 style="color:#9090a0;font-size:0.9rem;margin-bottom:10px">📅 Historial — Última semana</h2>
+<div class="date-nav">
+<a href="reporte_plusultra_2026-07-23.html" class="active">📄 23 jul</a>
+<a href="reporte_plusultra_2026-07-22.html">📄 22 jul</a>
+<a href="reporte_plusultra_2026-07-21.html">📄 21 jul</a>
+<a href="reporte_plusultra_2026-07-20.html">📄 20 jul</a>
+<a href="reporte_plusultra_2026-07-19.html">📄 19 jul</a>
+<a href="reporte_plusultra_2026-07-18.html">📄 18 jul</a>
+</div>
+
 <div class="card">
 <h2>🔍 ¿Qué es esto?</h2>
 <p style="color:#c0c0d0">Informe diario automático con todas las noticias sobre el caso Plus Ultra, generado a partir de Google News RSS. Incluye cobertura nacional española e internacional (Venezuela, Colombia, Perú, Argentina).</p>
-<a class="btn" href="reporte_plusultra_2026-07-23.html">📂 Ver informe de hoy</a>
+<a class="btn" href="reporte_plusultra_2026-07-23.html">📂 Ver último informe</a>
 </div>
-<div class="footer">Generado por Hermes Agent para MB360</div>
+
+<div class="footer">Generado por Hermes Agent para MB360 · Datos de Google News RSS</div>
 </body></html>
